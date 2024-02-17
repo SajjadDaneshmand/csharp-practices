@@ -1,0 +1,16 @@
+video 1:
+introduction about course
+
+video 2:
+introduction about C# lang
+C# is a cross platform lang. it means we can export our project for any operating system like windows, android, ios...
+introduce .NET framework: with this framework, you can write code for creating websites and something like that
+some explanation about frameworks. In fact, I already knew what he was saying
+
+video 3:
+introduse visual studio
+At the beginning, we use the console app
+in C#, string should be in a: "
+	for example: string a = "hello world"
+
+print first hello world with C# :)
