@@ -1,0 +1,29 @@
+video 4:
+csharp syntax:
+1. Case sensitivity: lower case and upper case variable are different with each other. it means: int a = 3; int A = 4; => a and A are not a same variable
+2. at end of each line, we should add ;
+3. our code should be in a open end close currly brucket ({})
+4. we can't define same variable with two value in a one block ({}): string a = "sajjad"; string a = "Ali" 
+5. when we do some operation on a variable like Addition or subtraction in a few line, changes will be added to last line.
+
+video 5:
+variables:
+1. they saved into a ram and when your program ends, the variable will be remove
+2. all variables type separated in two groups. 1: simple type 2: complex type
+	simple data type: int, string, bool, double
+		note: double = float in python
+3. define variable syntax: Type Name = Value;
+4. we can define variable without give a value to them. for example:
+	> int a; // it get a default value(0)
+	> a = 10
+	note: if you define variable without value and use of that, the system give you an error
+5. define two or more value in one line:
+	> int a, b, c;
+6. Complex data type consist of several simple data types
+7. to convert data type to each other:
+	1. import system: > using system
+	2. Convert.to* // * means every you want
+		note: default int is int32 (we have int16, int32 and int64)
+
+ta 21:12
+		
