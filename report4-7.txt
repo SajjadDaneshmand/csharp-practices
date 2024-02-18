@@ -6,9 +6,10 @@ csharp syntax:
 4. we can't define same variable with two value in a one block ({}): string a = "sajjad"; string a = "Ali" 
 5. when we do some operation on a variable like Addition or subtraction in a few line, changes will be added to last line.
 
+
 video 5:
 variables:
-1. they saved into a ram and when your program ends, the variable will be remove
+1. they saved into a ram and when your program ends, the variables will be remove
 2. all variables type separated in two groups. 1: simple type 2: complex type
 	simple data type: int, string, bool, double
 		note: double = float in python
@@ -24,6 +25,73 @@ variables:
 	1. import system: > using system
 	2. Convert.to* // * means every you want
 		note: default int is int32 (we have int16, int32 and int64)
+8. for any num plus one, we can use: ++ (it equal += 1 in python)
+9. for any num minus one, we can use: -- (it equal -= 1 in python
 
-ta 21:12
-		
+
+video 6:
+exception in csharp:
+syntax:
+try
+{
+	YOUR CODE
+}
+catch
+{
+	if YOUR CODE encounters an error, this block will run
+}
+finally
+{
+	just like python
+}
+
+
+video 7:
+conditions:
+syntax:
+if(CONDITION)
+{
+	YOUR CODE
+}
+else
+{
+	YOUR CODE
+}
+
+condition operators:
+	== equal
+	!= not equal
+	< biger than
+	> less than
+	>= less or equal
+	<= big or equal
+
+for check two or more condition should true you can use "&&" (and in python), for example:
+	> if (name == "sajjad" && family == "something")
+	> {
+	>    	YOUR CODE
+	> }
+
+IMPORTANT: IF and ELSE statement are slow and if we have a lots of condition, this isn't a good way for write it. in those case, we use SWITCH
+"switch" statement syntax:
+switch (value)
+{
+	case 1: // if value equal to 1
+		{
+			YOUR CODE
+			break;
+		}
+	case 2:
+		{
+			YOUR CODE
+			break;
+		}
+	case 3:
+		and more...
+	default:
+		{
+			YOUR CODE
+			break;
+		}
+
+note: default like else
