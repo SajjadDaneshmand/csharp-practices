@@ -1,0 +1,59 @@
+video 11:
+static:
+when we set static for variable or method, they will be public and accessible without creating instance of that class
+for example:
+    class AirPod
+    {
+        public int port;
+        public bool hasTwo;
+
+        public AirPod(int port, bool hasTwo)
+        {
+            this.port = port;
+            this.hasTwo = hasTwo;
+        }
+
+        public string Detail()
+        {
+            if (this.hasTwo)
+            {
+                return $"this air pod box has two airpod and it has {this.port} ports";
+            }
+            else
+            {
+                return $"this airpod hase {this.port} ports";
+            }
+        }
+
+        public static string whatDoThis()
+        {
+            return "This class return details of the airpods";
+        }
+    }
+
+inheritance: like python
+for example:
+    class child:parent
+    {
+        YOUR CODE
+    }
+
+video 12:
+properties:
+when define new variable, it has two property. set and get. by default, you can set value or get that from variable but actually you can customize it
+usage:
+    class TestProperty
+    {
+        private int _number = 0;
+        public int Number
+        {
+            get
+            {
+                return _number;
+            }
+            set
+            {
+                _number = Value
+            }
+        }
+    }
