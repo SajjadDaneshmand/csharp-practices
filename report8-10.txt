@@ -1,7 +1,7 @@
 video 8:
 ** loops:
 * for syntax:
-for(counter; where;++)
+for(counter; condition; ++)
 {
 	YOUR CODE
 }
@@ -38,9 +38,86 @@ int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 note: accessing to any value of array by index is just like python
 
 note: for create a None list, we use NEW statement, for example:
-	string[] names = new string[ THE NUMBER OF LIST MEMBER SOULD BE HERE ];
+	string[] names = new string[ THE NUMBER OF LIST MEMBER SHOULD BE HERE ];
 note: for give data to list, we do like this:
 	string[] names = new string[3];
 	names[0] = "sajjad";
 	names[1] = "sina";
 	names[2] = "sara";
+
+video 9:
+class usage:
+1. Separation of codes
+2. ....
+
+methods:
+1. void: for example we have a function but that not return anything. in this case, we use void. 
+2. for create method (function in python) if we want to use that in class program, it should be in a class program. for example:
+
+	> class Program
+	> {
+	> 	static void Main(string[] args)
+	> 	{
+	> 		Console.WriteLine("This is from method Main");
+	> 		FromNotMain();
+	>	}
+	> 	
+	> 	static void FromNotMain()
+	> 	{
+	> 		Console.WriteLine("this is from method not main");
+	>	}
+	> }
+
+3. if your method return something, you should define type of data after static and return your data with "return" statement
+4. you can't have two method(function) with same name but there is an exception.
+	for example, if your method one get two value and your method two get three value,
+	in this case and case like this you can define some method with same name
+
+note: if you see () in the end of anything, it's method
+
+
+video 10:
+classes:
+we have three access level in classes:
+    1. private: we access to those, only in class not from out
+    2. public: if we want to access to that method, we use this
+    3. protected
+
+example:
+    1:
+    class MyClass
+    {
+       private static int Sum(int a, int b) // default is private
+       {
+            return a + b;
+       }
+    }
+
+    2:
+    class MyPublicClass
+    {
+        public static string FullName(string fname, string lname)
+        {
+            return fname + " " + lname
+        }
+    }
+
+
+for giving variable in init of class, we do like this:
+    class Multiple
+    {
+        public int a;
+        public int b;
+
+        public Multiple(int a, int b)
+        {
+            this.a = a;
+            this.b = b;
+        }
+
+    }
+
+note: this = self
+
+
+
