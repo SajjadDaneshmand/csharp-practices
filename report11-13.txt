@@ -57,3 +57,53 @@ usage:
             }
         }
     }
+
+generics:
+syntax:
+    > GENERIC_TYPE <TYPE(INT, STRING, ...)> NAME = new GENERIC_TYPE<TYPE>();
+
+generic lists:
+example:
+    > List<int> Numbers = new List<int>();
+add item:
+    > Numbers.Add(3);
+    > Numbers.Add(4);
+remove item:
+    > Numbers.Remove(3);
+remove item by index:
+    > Numbers.RemoveAt(1);
+
+
+video 13:
+interface:
+1. they are our project rules.
+2. file name and class name should start with two upper character
+3. interfaces doesn't return anything
+3. Anyone who wants to follow these rules must inherit them
+
+example:
+namespace test
+{
+    interface IRules
+    {
+        bool download(string url);
+        bool extractFile(string path);
+        ...
+    }
+}
+----------------------------------------
+namespace test
+{
+    class AutoDownloader: IRules
+    {
+        public bool download(string url)
+        {
+            return true
+        }
+        public bool AutoExtract(string path)
+        {
+            return true
+        }
+    }
+}
+
