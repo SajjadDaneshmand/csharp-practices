@@ -1,0 +1,31 @@
+video 14:
+some basic explanation about namespaces
+video 15:
+introduction about windows form applications
+video 16:
+partial classes:
+when you define class as partial you can define it again and again in other files or in a same file. and when we build that project, classes will be merged
+note:
+in partial classes, we can't define same method
+for example:
+file: partialfile1.cs
+partial class Operation
+{
+    static int sum(int num1, int num2)
+    {
+        return num1 + num2;
+    }
+}
+
+file: partialfile2.cs
+
+partial class Operation
+{
+    static string sum(int num1, int num2)
+    {
+        string finalStr = "final num is: " + (num1 + num2);
+        return finalStr;
+    }
+}
+
+ATTENTION: THIS IS WRONG BECAUSE WE HAVE TOW METHOD WITH SAME NAME!!!
