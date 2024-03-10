@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    class BankAccount
+    class BankAccount: IBank
     {
         private string _accountNumner;
         private string _accountOwner;
