@@ -1,0 +1,27 @@
+video 17:
+creating claculator:
+nothing
+
+
+video 18:
+introduction about database:
+nothing
+
+
+video 19:
+connecting to database:
+1: write connection string
+	connection string: "Data Source= <YOUR SQL SERVER ADDRESS>;Initial catalog=<TABLE NAME>;Integrated Security=true"
+	Note: it's only worked for installing sql as default(Integrated security)
+
+2: connect to database
+
+3: what do you want to do? if you want to read all data, you should do like this:
+	1: write query for select all
+	2: execute query with sqlDataAdaptor(it like kamioon for saving data)
+	3: pouring information into DataTable
+
+and then you can show data in your app
+
+Note: for working with sql, first you should using it:
+	using System.Data.SqlClient;
