@@ -1,0 +1,36 @@
+video1:
+introduction about csharp advance course
+
+
+video 2:
+Linq framework (Getting query language):
+1. it can get query from all collection and return result to programmer
+2. its syntax is like this:
+    (sql) -> select * from Person as p
+    (Linq) -> from p in Person select p
+
+    ** ordered
+    (sql) -> select * from Person ordered by (column) desc as p
+    (Linq) -> from p in Person orderby p descending select p
+
+    ** like
+    (sql) -> select * from Person where (column) like '%<something>%' as p
+    (Linq) -> from p in Person where p.Contains("<Something>") select p
+
+    Linq methods:
+        (query).ToArray(); // -> return Array of values
+        (query).First(); // -> return first value of collection (if nothing exists, raise an error)
+        (query).FirstOrDefault(); // -> return first value of collection (if nothing exist, set it to 0)
+        (query).Single(); // -> return first value of collection and when find it, stop searching (if nothing exists, raise an error)
+        (query).SingleOrDefault(); // -> return first value of collection and when find it, stop searching (if nothing exist, set it to 0)
+        (query).Any(); // -> it check our query has result or no
+        (query).Count(); // -> return length of my query that I execute
+        (query).Max(); // -> return maximum value of my query that I execute
+        (query).Min(); // -> return minimum Value of my query that I execute
+        (query).Sum(); // -> returns sum value of query that I executed
+        (query).ToList(); // -> return List of values
+
+3. var datatype: it's anonymous. by default, it doesn't have any type. when we set first value, datatype will be specified
+
+
+
